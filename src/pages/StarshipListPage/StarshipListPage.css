@@ -1,3 +1,7 @@
+h1{
+  color: white;
+}
+
 section {
     margin: 50px;
     display: grid;
@@ -5,7 +9,7 @@ section {
     grid-gap: 20px;
   }
 
-  section a {
+  .ship {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +22,7 @@ section {
     font-size: 20px;
   }
 
-section a:hover{
+.ship:hover{
     background-color: rgb(255, 255, 255);  
     color: darkslategrey;
   }

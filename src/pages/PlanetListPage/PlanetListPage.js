@@ -20,27 +20,19 @@ class PlanetListPage extends Component{
       async componentDidMount() {
         const planets = await getAllPlanets();
         this.setState({ planets: planets.results });
-        console.log(planets)
       }
 
     render(){
         return(
-            <div>
-                
+            <div>    
+          <h1>Planets</h1>
           <section>
-       
                 {this.state.planets.map(planet => 
-            
-                
                 <div className='planet' key={planet.name}>
                 {planet.name}
                 </div>
-                
-               
-
                 )}
             </section>
-            
             </div>
         )
     }

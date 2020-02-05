@@ -7,7 +7,7 @@ import PlanetListPage from '../../pages/PlanetListPage/PlanetListPage';
 export default function BasicExample() {
     return (
       <Router>
-        <div>
+        <div className='nav'>
           <ul>
             
             <li>
@@ -19,8 +19,6 @@ export default function BasicExample() {
             </li>
           
           </ul>
-  
-          <hr />
   
           <Switch>
             
