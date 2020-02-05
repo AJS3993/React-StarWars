@@ -34,3 +34,17 @@
   font-size: 20px;
 }
 
+.App section a:hover{
+  background-color: rgb(255, 255, 255);  
+  color: darkslategrey;
+}
+
+.nav{
+  background-color: #515969;
+  min-height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+}
+

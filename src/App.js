@@ -22,9 +22,18 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">STAR WARS STARSHIPS</header>
-        <Switch>
+        <header className="App-header">STAR WARS</header>
+
+        <div className='nav'>
           
+          <div>Ships</div>
+
+          <div>Planets</div>
+        
+        </div>
+        
+        <Switch>
+
           <Route exact path='/' render={() => 
             <section>
               {this.state.starships.map(starship => 
@@ -47,6 +56,7 @@ class App extends Component {
           }/>
 
         </Switch>
+
       </div>
     );
   }

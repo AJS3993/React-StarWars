@@ -14,7 +14,10 @@ const StarshipPage = ({location}) => {
           <span>{starship.model}</span>
           <span>CREW:</span>
           <span>{starship.crew}</span>
+          <span>COST:</span>
+          <span>{starship.cost_in_credits} Credits</span>
           <Link to='/'>RETURN</Link>
+          
         </div>
         :
         <h3>Loading...</h3>
