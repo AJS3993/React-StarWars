@@ -1,7 +1,8 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 import { Route, Switch, Link } from 'react-router-dom';
 import StarshipPage from '../StarshipPage/StarshipPage';
 import { getAllStarships } from '../../services/sw-api';
+import './StarshipListPage.css'
 
 class StarshipListPage extends Component{
 
@@ -26,26 +27,34 @@ class StarshipListPage extends Component{
 
 <Route exact path='/' render={() => 
   <section>
+   
+    
     {this.state.starships.map(starship => 
+      
       <Link
-        to={{
+        
+      to={{
           pathname: '/starships',
           state: starship
         }}
         key={starship.name}
-      >
-        {starship.name}
-      </Link>
-    )}
-  </section>
-}/>
-<Route path='/starships' render={({location}) => 
-  <StarshipPage
-    location={location}
-  />
-}/>
+             
+             >
 
-</Switch>
+            {starship.name}
+            </Link>
+      
+              )}
+                </section>
+              }/>
+
+              <Route path='/starships' render={({location}) => 
+                <StarshipPage
+                location={location}
+                />
+              }/>
+
+              </Switch>
                 
             </div>
         )

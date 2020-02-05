@@ -6,16 +6,23 @@ const StarshipPage = ({location}) => {
   const starship = location.state;
   return (
     <div className='StarshipPage'>
+      
       {starship ?
+        
         <div className='StarshipPage-starship'>
+          
           <span>NAME:</span>
           <span>{starship.name}</span>
+          
           <span>MODEL:</span>
           <span>{starship.model}</span>
+          
           <span>CREW:</span>
           <span>{starship.crew}</span>
+          
           <span>COST:</span>
           <span>{starship.cost_in_credits} Credits</span>
+          
           <Link to='/'>RETURN</Link>
           
         </div>

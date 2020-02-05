@@ -1,0 +1,8 @@
+.nav{
+    background-color: #515969;
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: calc(10px + 2vmin);
+  }
