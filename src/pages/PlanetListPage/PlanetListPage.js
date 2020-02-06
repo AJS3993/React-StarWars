@@ -25,8 +25,8 @@ class PlanetListPage extends Component{
     render(){
         return(
             <div>    
-          <h1>Planets</h1>
-          <section>
+          <h1 className='planeth1'>Planets</h1>
+          <section className='planetsection'>
                 {this.state.planets.map(planet => 
                 <div className='planet' key={planet.name}>
                 {planet.name}

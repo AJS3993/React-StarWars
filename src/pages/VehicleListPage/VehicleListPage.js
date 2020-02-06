@@ -23,10 +23,10 @@ class VehicleListPage extends Component{
         render(){
             return(
                 <div>    
-              <h1>Vehicles</h1>
-              <section>
+              <h1 className='vehicleh1'>Vehicles</h1>
+              <section className='vehiclesection'>
                     {this.state.vehicles.map(vehicles => 
-                    <div className='species' key={vehicles.name}>
+                    <div className='vehicle' key={vehicles.name}>
                     {vehicles.name}
                     </div>
                     )}

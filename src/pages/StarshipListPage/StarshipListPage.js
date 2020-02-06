@@ -23,9 +23,9 @@ class StarshipListPage extends Component{
   render(){
     return(
       <div>
-        <h1>Ships</h1>
+        <h1 className='shiph1'>Ships</h1>
 
-        <section>
+        <section className='shipsection'>
           {this.state.starships.map((starship, idx) => 
             <div className='ship' key={starship.name}>
               {starship.name}

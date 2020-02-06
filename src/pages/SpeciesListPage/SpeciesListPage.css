@@ -1,8 +1,8 @@
-h1{
-    color: white;
+.speciesh1{
+    color: rgb(106, 103, 226);
   }
   
-  section {
+  .speciessection {
       margin: 50px;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -13,7 +13,7 @@ h1{
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: darkslategrey;
+      background-color: rgb(87, 88, 136);
       padding: 20px;
       border-radius: 5px;
       min-height: 60px;

@@ -1,11 +1,11 @@
-h1{
-  color: white;
+.planeth1{
+  color: rgb(40, 238, 22);
 }
 
-section {
+.planetsection {
     margin: 50px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
 
@@ -13,7 +13,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: darkslategrey;
+    background-color: rgb(90, 131, 147);
     padding: 20px;
     border-radius: 5px;
     min-height: 60px;

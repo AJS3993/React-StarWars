@@ -23,8 +23,8 @@ class SpeciesListPage extends Component{
         render(){
             return(
                 <div>    
-              <h1>Species</h1>
-              <section>
+              <h1 className='speciesh1'>Species</h1>
+              <section className='speciessection'>
                     {this.state.species.map(species => 
                     <div className='species' key={species.name}>
                     {species.name}
