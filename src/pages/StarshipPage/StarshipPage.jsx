@@ -14,6 +14,9 @@ const StarshipPage = (props) => {
           <span>{starship.name}</span>
           <span>MODEL:</span>
           <span>{starship.model}</span>
+          <span>CREW:</span>
+          <span>{starship.crew}</span>
+
           <Link to='/'>RETURN</Link>
         </div>
         :

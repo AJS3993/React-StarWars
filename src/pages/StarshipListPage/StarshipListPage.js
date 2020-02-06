@@ -23,21 +23,27 @@ class StarshipListPage extends Component{
   render(){
     return(
       <Router>
+        
+        
+        
         <h1 className='shiph1'>Ships</h1>
+
+        <Switch>
+          <Route exact path='/' render={() => 
 
         <section className='shipsection'>
           {this.state.starships.map((starship, idx) => 
+           <Link key={starship.name} to={`/starships/${idx}`}>
             <div className='ship' key={starship.name}>
               {starship.name}
-              <Link key={starship.name} to={`/starships/${idx}`}>info</Link>
-
-            </div>
-            
+               </div>
+               </Link> 
           )}
         </section>  
-    
+    }/>
           
-          <Switch>
+
+         
               <Route path='/starships/:idx' render={(props) =>
               <StarshipPage {...props} getStarship={this.getStarship}/>
               }/>
