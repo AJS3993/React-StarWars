@@ -42,13 +42,10 @@ class StarshipListPage extends Component{
         </section>  
     }/>
           
-
-         
               <Route path='/starships/:idx' render={(props) =>
               <StarshipPage {...props} getStarship={this.getStarship}/>
               }/>
           </Switch>
-      
       
       </Router>
     )

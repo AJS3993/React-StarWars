@@ -5,6 +5,9 @@ import StarshipListPage from '../../pages/StarshipListPage/StarshipListPage';
 import PlanetListPage from '../../pages/PlanetListPage/PlanetListPage';
 import SpeciesListPage from '../../pages/SpeciesListPage/SpeciesListPage';
 import VehicleListPage from '../../pages/VehicleListPage/VehicleListPage';
+import MapPage from '../../pages/MapPage/MapPage';
+
+
 export default function BasicExample() {
     return (
       <Router>
@@ -26,6 +29,10 @@ export default function BasicExample() {
             <li>
               <Link to="/species">Species</Link>
             </li>
+
+            <li className='navRight'>
+              <Link to="/map">Galaxy Map</Link>
+            </li>
           
           </ul>
   
@@ -45,6 +52,10 @@ export default function BasicExample() {
             
             <Route path="/species">
               <SpeciesListPage />
+            </Route>
+
+            <Route path="/map">
+              <MapPage />
             </Route>
 
           </Switch>
