@@ -29,7 +29,7 @@ class StarshipListPage extends Component{
           {this.state.starships.map((starship, idx) => 
             <div className='ship' key={starship.name}>
               {starship.name}
-              <Link key={starship.name} to={`/starships/${idx}`}>test</Link>
+              <Link key={starship.name} to={`/starships/${idx}`}>info</Link>
 
             </div>
             

@@ -16,6 +16,7 @@
   grid-template-columns: 1fr 5fr;
   grid-gap: 20px;
   color: white;
+  background-color: rgb(0, 74, 139);
 }
 
 .StarshipPage a {
