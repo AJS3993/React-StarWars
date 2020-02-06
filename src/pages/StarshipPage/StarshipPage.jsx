@@ -1,36 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, {Component} from 'react';
 import './StarshipPage.css';
 
-const StarshipPage = ({location}) => {
-  const starship = location.state;
-  return (
-    <div className='StarshipPage'>
-      
-      {starship ?
-        
-        <div className='StarshipPage-starship'>
-          
-          <span>NAME:</span>
-          <span>{starship.name}</span>
-          
-          <span>MODEL:</span>
-          <span>{starship.model}</span>
-          
-          <span>CREW:</span>
-          <span>{starship.crew}</span>
-          
-          <span>COST:</span>
-          <span>{starship.cost_in_credits} Credits</span>
-          
-          <Link to='/'>RETURN</Link>
-          
-        </div>
-        :
-        <h3>Loading...</h3>
-      }
-    </div>
-  );
-};
+class StarshipPage extends Component{
+
+  render(){
+    return(
+      <div>
+      hi
+      </div>
+    )
+  }
+}
 
 export default StarshipPage;

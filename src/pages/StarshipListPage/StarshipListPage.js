@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import { getAllStarships } from '../../services/sw-api';
+// import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+// import StarshipPage from '../StarshipPage/StarshipPage';
 import './StarshipListPage.css'
 
 class StarshipListPage extends Component{
@@ -17,28 +19,29 @@ class StarshipListPage extends Component{
         this.setState({ starships: starships.results });
       }
 
-    render(){
-        return(
-            <div>
-                
-             <h1>Ships</h1>
 
-             <section>
-       
-       {this.state.starships.map(ship => 
-   
-       
-       <div className='ship' key={ship.name}>
-       {ship.name}
-       </div>
-       
-      
+  render(){
+    return(
+      <div>
+        <h1>Ships</h1>
 
-       )}
-   </section>
-                
+        <section>
+          {this.state.starships.map((starship, idx) => 
+            <div className='ship' key={starship.name}>
+              {starship.name}
+
+              
+            
+
+
+
+             
             </div>
-        )
-    }
+          )}
+        </section>     
+      </div>
+    )
+  }
 }
+
 export default StarshipListPage

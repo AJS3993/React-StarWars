@@ -4,6 +4,7 @@ import './Nav.css'
 import StarshipListPage from '../../pages/StarshipListPage/StarshipListPage';
 import PlanetListPage from '../../pages/PlanetListPage/PlanetListPage';
 
+
 export default function BasicExample() {
     return (
       <Router>
@@ -17,6 +18,14 @@ export default function BasicExample() {
             <li>
               <Link to="/planets">Planets</Link>
             </li>
+
+            {/* <li>
+              <Link to="/vehicles">Vehicles</Link>
+            </li>
+
+            <li>
+              <Link to="/species">Species</Link>
+            </li> */}
           
           </ul>
   
